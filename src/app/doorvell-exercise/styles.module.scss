@@ -1,0 +1,43 @@
+@mixin grid-center {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.doorvellExercise {
+  color: #010101da;
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 2% 96% 2%;
+  grid-template-rows: 10% 80% 10%;
+  height: 100vh;
+  justify-items: center;
+
+  .mainPageLink {
+      grid-column: 2;
+      grid-row: 1;
+      justify-self: start;
+      align-self: end;
+      width: 100%;
+      left: 10px;
+      position: relative;
+      span {
+        transition: transform 200ms;
+      }
+      &:hover {
+        span {
+          display: inline-block;
+          position: relative;
+          transform: translateX(-5px);
+        }
+      }
+    }
+
+  main {
+    @include grid-center();
+    grid-row-start: 2;
+  }
+  nav {
+    @include grid-center();
+    grid-row-start: 3;
+  }
+}

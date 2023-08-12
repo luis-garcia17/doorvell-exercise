@@ -1,0 +1,9 @@
+.products {
+  background-color: rosybrown;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}

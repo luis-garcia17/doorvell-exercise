@@ -1,0 +1,17 @@
+.pagination {
+  text-align: center;
+  align-self: center;
+  font-size: 28px;
+  color: #5f400c;
+  ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(7, 32px);
+    li {
+      &:hover {
+        background-color: #5f400c;
+        color: ghostwhite;
+      }
+    }
+  }
+}
